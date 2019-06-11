@@ -1,0 +1,44 @@
+.botoesdoacao{
+
+display: flex;   
+justify-content: space-evenly;   
+padding-top: 10rem;
+padding-bottom: 10rem;
+
+}
+
+
+#botaodedoacao{
+
+  border-radius: 28px;
+
+}
+
+@media screen and (max-width: 769px) {
+    .botoesdoacao{
+
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        ALIGN-ITEMS: center;
+    
+    
+    }
+
+   /** o que eu fiz?????     no padrão desktop esta 10 rem de padding-top:  e ai somava mais  2
+     de margin-top: entao eu diminui 2 e na teoria e pra funcionar.... bora la testar... */
+
+    #botaodedoacao{
+
+  margin-top: 2rem;
+
+    }
+
+}
+
+
+ 
+
+
+
