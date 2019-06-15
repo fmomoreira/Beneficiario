@@ -1,10 +1,10 @@
 .rodape{
-    background-color:#28a745f0;;
+    background-color:#434343;
 }
 
 
 .bg-light {
-    background-color: #28a745f0!important;
+    background-color: #434343!important;
 
 }
 .btn-primary {
@@ -27,13 +27,14 @@ padding-top: 4rem;
 #p_rodape{
 
 color: white ;
+text-transform: uppercase;
 
 }
 .subtitulopai{
 
 display: flex;
 flex-direction: column;
-
+padding-right: 12rem;
 }
 
 .rodapesubititulo{
@@ -111,6 +112,13 @@ width: 50%;
 #socialnewlaster{
 
     display: flex;
+
+}
+
+.childrodape{
+
+margin-left: 10%;
+margin-right: 10%;
 
 }
 

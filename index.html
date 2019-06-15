@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/filme.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <title>Beneficentro</title>
-    <!--<script src="//code.jivosite.com/widget.js" jv-id="hDbbKvAvZm" async></script>-->
+    <script src="//code.jivosite.com/widget.js" jv-id="hDbbKvAvZm" async></script>
 
   </head>
   <body>
@@ -214,6 +214,7 @@
 
 
         <footer class="rodape">
+          <div class="childrodape">
           <div class="rodapetitulo">
           <a><img src="img/logo.jpg" width="135" height="95" class="d-inline-block align-top" alt="logo_Beneficentro" style="border-radius: 15px;"></a>
           <p id="p_rodape"style="margin-top: 2rem;
@@ -255,45 +256,13 @@
         <div class="direitosautoraisrodape">
        <p id="p_rodape"> ©2019 Todos os direitos reservados.<a href="https://www.Beneficentros.com.br/" target="_blanck"  >Beneficentro</a>.</p>           
         </div>
+      </div>
         </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script  type="text/javascript" src="js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      var slide_wrp 		= ".side-menu-wrapper"; //Menu Wrapper
-      var open_button 	= ".menu-open"; //Menu Open Button
-      var close_button 	= ".menu-close"; //Menu Close Button
-      var overlay 		= ".menu-overlay"; //Overlay
-      
-      //Initial menu position
-      $(slide_wrp).hide().css( {"left": -$(slide_wrp).outerWidth()+'px'}).delay(50).queue(function(){$(slide_wrp).show()}); 
-      
-      $(open_button).click(function(e){ //On menu open button click
-        e.preventDefault();
-        $(slide_wrp).css( {"left": "0px"}); //move menu left position to 0
-        setTimeout(function(){
-          $(slide_wrp).addClass('active'); //add active class
-        },50);
-        $(overlay).css({"opacity":"1", "width":"100%"});
-      });
-      
-      $(close_button).click(function(e){ //on menu close button click
-        e.preventDefault();
-        $(slide_wrp).css( {"left": -$(slide_wrp).outerWidth()+'px'}); //hide menu by setting left position 
-        setTimeout(function(){
-          $(slide_wrp).removeClass('active'); // remove active class
-        },50);
-        $(overlay).css({"opacity":"0", "width":"0"});
-      });
-      
-      $(document).on('click', function(e) { //Hide menu when clicked outside menu area
-        if (!e.target.closest(slide_wrp) && $(slide_wrp).hasClass("active")){ // check menu condition
-          $(slide_wrp).css( {"left": -$(slide_wrp).outerWidth()+'px'}).removeClass('active');
-          $(overlay).css({"opacity":"0", "width":"0"});
-        }
-      });
-      </script>
+    <script type="text/javascript"  src="js/menuresponsive.js" >
   </body>
 </html>
