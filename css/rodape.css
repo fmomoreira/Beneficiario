@@ -1,3 +1,9 @@
+body{
+
+    font-family: 'Open Sans', sans-serif!important;
+
+}
+
 .rodape{
     background-color:#434343;
 }
@@ -26,8 +32,9 @@ padding-top: 4rem;
 
 #p_rodape{
 
-color: white ;
-text-transform: uppercase;
+
+font-size: 15px;
+color: #d4d4d4;
 
 }
 .subtitulopai{
