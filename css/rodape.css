@@ -37,6 +37,22 @@ font-size: 15px;
 color: #d4d4d4;
 
 }
+
+#p_rodape_newlester{
+
+    font-size: 15px;
+color: #d4d4d4;
+text-transform: uppercase;
+
+}
+
+#p_rodape_titleicons{
+
+    font-size: 15px;
+color: #d4d4d4;
+text-transform: uppercase;
+
+}
 .subtitulopai{
 
 display: flex;
